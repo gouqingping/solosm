@@ -1,0 +1,259 @@
+.morShow {
+	color: white
+}
+
+.container {
+	padding: 0;
+	background: rgba(0,0,0,0);
+	border-radius: 0;
+	border: 0;
+}
+
+li p {
+	display: inline-block;
+}
+
+.photoMin {
+	width: 30%;
+	height: auto;
+	float: left;
+	padding-top: 30px;
+	border-radius: 10px;
+}
+
+.photoMin img {
+	border-radius: 10px;
+	cursor: pointer;
+	-webkit-transition: transform 0.3s ease 0s;
+	-moz-transition: transform 0.3s ease 0s;
+	-o-transition: transform 0.3s ease 0s;
+	transition: transform 0.3s ease 0s;
+}
+
+.photoMin img:hover {
+	-webkit-transition: transform 0.3s ease 0s;
+	-moz-transition: transform 0.3s ease 0s;
+	-o-transition: transform 0.3s ease 0s;
+	transition: transform 0.3s ease 0s;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.introductionMin {
+	width: 50%;
+	height: auto;
+	float: left;
+	padding: 30px 10px 10px 80px;
+	text-align: left;
+	line-height: 2em;
+}
+
+ul li:first-child,.icon_lists  {
+	margin-top: 40px;
+}
+
+ul li:last-child {
+	margin-bottom: 40px;
+}
+
+ul li h4 {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+ul li:last-child {
+	opacity: 1;
+	-webkit-animation: pr_scale 1s ease 1;
+	animation: pr_scale 1s ease 1;
+	transform: scale(1);
+}
+
+@-webkit-keyframes pr_scale {
+	0% {
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		opacity: 0
+	}
+
+	100% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes pr_scale {
+	0% {
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		opacity: 0
+	}
+
+	100% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.icon_lists li {
+	display: inline-block;
+	margin: 0 6px;
+}
+
+#timeline {
+	width: 760px;
+	height: 400px;
+	overflow: hidden;
+}
+
+#dates {
+	width: 760px;
+	height: 60px;
+	overflow: hidden;
+}
+
+#dates li {
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 50px;
+	font-size: 24px;
+	text-align: center;
+	background: url('img/biggerdot.png') center bottom no-repeat;
+}
+
+#dates a {
+	line-height: 38px;
+	padding-bottom: 10px;
+}
+
+#dates .selected {
+	font-size: 38px;
+	opacity: 1;
+	text-shadow:rgba(0,0,0,0.1) 1px 1px 2px;
+}
+
+#issues li {
+	width: 760px;
+	min-width: 200px;
+	height: auto;
+	list-style: none;
+	float: left;
+}
+
+#issues li h2 {
+	color: #fb9b68;
+	font-size: 42px;
+	margin: 20px 0;
+	text-shadow:rgba(0,0,0,0.1) 1px 1px 2px;
+}
+
+#issues li p {
+	font-size: 14px;
+	margin-right: 70px;
+	margin: 10px;
+	font-weight: normal;
+	line-height: 22px;
+	margin-left: -1px;
+	width: 100%;
+}
+
+#dates li a {
+	color: #999;
+}
+
+/* 手机等小屏幕手持设备 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.introductionMin {
+	    padding:15px !important;
+	    padding-right: 15px;
+	    width: 100% !important;
+	}
+	.photoMin {
+		width: 100% !important;
+		text-align: center;
+	}
+
+
+}
+
+/* 平板之类的宽度 1024 以下设备 */
+@media only screen and (min-width: 321px) and (max-width: 1024px) {
+	.introductionMin {
+	    padding:15px !important;
+	    width: 100% !important;
+	    padding-right: 15px;
+	}
+	.photoMin {
+		width: 100% !important;
+		text-align: center;
+	}
+}
+
+/* 竖屏 */
+@media screen and (orientation:portrait) and (max-width: 720px) {
+	.introductionMin {
+	    padding:15px !important;
+	    width: 100% !important;
+	    padding-right: 15px;
+	}
+	.photoMin {
+		width: 100% !important;
+		text-align: center;
+	}
+}
+
+/* index.css www.webnotbook.com */
+
+
+.ada_description {
+	font-size: 0.7em;
+	color: #dddddd;
+	font-weight: 100;
+	line-height: 1em;
+}
+
+.main {
+	margin-bottom: 10px 0;
+}
+.main p {
+	padding: 0;
+	margin: 0 0 0 3em;
+}
+
+.main dt  {
+	color: #454545;
+}
+
+.main dd ,
+.main dt {
+	margin:0 0 .6em 0;
+}
+
+.main dd {
+	color: #999;
+	padding:5px 10px;
+	border: 1px solid #dedede;
+	border-radius: 8px;
+	line-height: 2em;
+	cursor: text;
+}
+
+.main dd:hover  {
+	color: #000;
+	/*transform: scale(1.01);
+	will-change:transform;
+	transition: transform 0.3s ease 0s;
+	-moz-transition:transform 0.3s ease 0s;
+	-webkit-transition:transform 0.3s ease 0s;
+	-o-transition:transform 0.3s ease 0s;*/
+}
